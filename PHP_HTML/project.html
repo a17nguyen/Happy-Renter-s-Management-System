@@ -1,0 +1,206 @@
+<html lang = "en">
+<body>
+<body style = "font-family: Montserrat">
+<head>
+<meta charset="utf-8"/>
+<title>Happy Renters</title>
+<div>
+<div style="background-color:Azure">
+	<br>
+	<h1 style = "text-align: center;">Happy Renter's Rental Management System</h1>
+	<br>
+	<h4 style= "text-align: center;">Developed by: Andrew Nguyen and Kelly Ouye</h4>
+	<br>
+	<br>
+	<p>Andrew Nguyen and Kelly Ouye have designed and implemented a rental management system for Happy Renter’s Rental Management Inc. This system will be used by branch employees and allows them to access information about employees, properties, tenants, and lease agreements. As a result of using a relational database and transaction Management, rental managers will have an easier time keeping track of properties and lease agreements.</p>
+	<hr>
+	<hr>
+</div>
+</head>
+<header>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</header>
+<form action="http://linux.students.engr.scu.edu/~anguyen/query1.php">
+<div>
+<div style = "background-color: Honeydew">
+<hr>
+	<h3>Transaction 1</h3>
+	<p>Generate a list of rental properties available for a specific branch (where the name of the branch is entered as input), along with the manager name.</p>
+  Input Branch Number:<br>
+  <input type="text" name="branchNo"><br>
+  <input type="submit" value="Generate">
+</form>
+<br>
+
+<form action="http://linux.students.engr.scu.edu/~anguyen/query2.php">
+<hr>
+	<h3>Transaction 2</h3>
+	<p>Generate a list of supervisors and the properties (with addresses) they supervise.</p>
+
+  <input type="submit" value="Generate">
+</form>
+<br>
+
+<form action="http://linux.students.engr.scu.edu/~anguyen/query3.php">
+	<hr>
+	<h3>Transaction 3</h3>
+	<p>Generate a list of rental properties by a specific owner (where the owner name is entered as input), listed in a GreenField branch (the branch name is input).
+</p>
+
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  Branch:<br>
+  <input type="text" name="branch"><br>
+  <input type="submit" value="Generate">
+</form>
+<br>
+
+<form action="http://linux.students.engr.scu.edu/~anguyen/query4.php">
+	<hr>
+	<h3>Transaction 4</h3>
+	<p>Show a list of properties available</p>
+	   City:<br>
+  	  <input type="text" name="city"><br>
+	  Number of rooms:<br>
+	  <input type="text" name="roomAmt"><br>
+	  Lowest Rent:<br>
+	  <input type="text" name="Lo"><br>
+ 		Highest Rent:<br>
+	  <input type="text" name="Hi"><br>
+	  <input type="submit" value="Generate">
+</form>
+<br>
+
+
+<form action="http://linux.students.engr.scu.edu/~anguyen/query5.php">
+	<hr>
+	<h3>Transaction 5</h3>
+	<p>Show the number of properties available for rent by branch.</p>
+  <input type="submit" value="Generate">
+</form>
+<br>
+
+<form action="http://linux.students.engr.scu.edu/~anguyen/query6.php">
+	<hr>
+	<h3>Transaction 6</h3>
+	<p>Create a lease agreement</p>
+
+  Property Number:<br>
+  <input type="text" name="PN"><br>
+  First Name:<br>
+  <input type="text" name="FN"><br>
+  Last name:<br>
+  <input type="text" name="LN"><br>
+  Home Phone:<br>
+  <input type="text" name="HP"><br>
+  Work Phone:<br>
+  <input type="text" name="WP"><br>
+  Start Date<br>
+  (yyyymmdd): <br>
+  <input type="date" name="SD"><br>
+  End Date<br>
+  (yyyymmdd): <br>
+  <input type="date" name="ED"><br>
+  Deposit:<br>
+  <input type="text" name="DP"><br> 
+  <input type="submit" value="Create">
+</form>
+<br>
+
+
+<form action="http://linux.students.engr.scu.edu/~anguyen/query7.php">
+	<hr>
+	<h3>Transaction 7</h3>
+	<p>Show a lease agreement for a renter (name is entered as input).</p>
+
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  <input type="submit" value="Show">
+</form>
+<br>
+
+<form action="http://linux.students.engr.scu.edu/~anguyen/query8.php">
+	<hr>
+	<h3>Transaction 8</h3>
+	<p>Show the renters who rented more than one property.</p>
+
+  <input type="submit" value="Show">
+</form>
+<br>
+
+<form action="http://linux.students.engr.scu.edu/~anguyen/query9.php">
+	<hr>
+	<h3>Transaction 9</h3>
+	<p>Show the average rent for properties in a city</p>
+  Input City:<br>
+  <input type="text" name="city"><br>
+  <input type="submit" value="Generate">
+</form>
+<br>
+
+<form action="http://linux.students.engr.scu.edu/~anguyen/query10.php">
+	<hr>
+	<h3>Transaction 10</h3>
+	<p>Show the names and addresses of properties whose leases will expire in two months.</p>
+
+  <input type="submit" value="Show">
+</form>
+<br>
+
+
+<br>
+</div>
+<div>
+<div style = "background-color: Azure">
+<hr>
+<hr>
+
+<h2>Documentation</h2>
+<p>In order to implement the relational database we made the following assumptions: </p>
+<br>
+<i>Description</i>
+<br>
+<ul>
+	<li>A branch is identified by a branch number, phone, and address (street, city, and zip)</li>
+	<li>A branch has several employees identified by their employee id, name, phone, and job designation</li>
+		<ul>		
+			<li>One manager who manages the supervisors</li>
+			<li>Several supervisors who manage several properties</li>
+		</ul>
+	<li>A rental property has a status (available or leased), a start date (if applicable), and a property owner</li>
+	<li>A property owner is identified by a name, permanent address, and a phone number </li>
+		<ul>		
+			<li>An owner may own more than one property</li>
+		</ul>
+	<li>A lease agreement is identified by a renter, home phone, work phone, start day of lease, end day of lease, deposit amount, rent amount, and supervisor’s name</li>
+		<ul>
+			<li>A lease is created when a property is rented</li>
+		</ul>
+</ul>
+<br>
+<i>Constraints</i>
+<ul>
+	<li>A branch is managed by one manager</li>
+	<li>A lease agreement should have a duration of six months to a fully year</li>
+	<li>The status of the property should be changed to leased when the lease agreement is created</li>
+	<li>A rental property should be removed from the supervisor’s list when the rental property is no longer rented</li>
+	<li>With every new lease, an increase of 10% will be added to the rent amount from the previous lease </li>
+</ul>
+<br>
+<i>Assumptions</i>
+<ul>
+	<li>For Transaction 1, the list of Rental properties are generated based on the Branch Number. We are assuming that branches are identified by their Branch Number rather than a Branch Name to have a primary key.</li>
+	<li>For Transaction 3, the list of properties is returned as the Property Numbers rather than the addresses</li>
+	<li>For Transaction 5, the number of properties available for rent corresponds with the Branch Number</li>
+	<li>For Transaction 6, we assume that the renter can deposit any amount before renting the Property</li>
+	<li>Instead of creating a Renter’s Entity, we put the renter’s information in the lease agreement. The Transactions that require the Renter’s Name can be parced from the Lease Agreement.</li>
+	<li>For the Manager and Supervisor Tables, we included a phone attribute because the Employees Entity has the phone attribute, and Managers and Supervisors belong in the Employees Entity. However, the phone number of the employees are never used in any of the transactions. </li>
+</ul>
+<div>
+</body>
+</html>
